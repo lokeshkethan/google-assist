@@ -12,6 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
+		<plugins>
 		<plugin>
 			<groupId>org.sonarsource.scanner.maven</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
@@ -23,6 +24,7 @@
 			<version>0.8.1</version>
 	
 		</plugin>
+		<plugins>
 	</build>
 	<dependecies>
 		<dependency>
