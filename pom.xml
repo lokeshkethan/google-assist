@@ -11,19 +11,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<dependencies>
-		<dependency>
+	<build>
+		<plugin>
 			<groupId>org.sonarsource.scanner.maven</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.7.0.1746</version>
 			<type>pom</type>
-		</dependency>
+		</plugin>
 		<plugin>
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.8.1</version>
+	
 		</plugin>
+	</build>
+	<dependecies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
