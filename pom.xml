@@ -5,7 +5,7 @@
 	<artifactId>google-assist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-		<name>maven project</name>
+		<name>Google-Assist</name>
 	<url>http://maven.apache.org</url>
 	
 	<properties>
@@ -19,7 +19,11 @@
 			<version>3.7.0.1746</version>
 			<type>pom</type>
 		</dependency>
-
+		<plugin>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.1</version>
+		</plugin>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
