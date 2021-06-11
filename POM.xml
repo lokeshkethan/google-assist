@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupsId>com.example.assist</groupsId>
+	<artifactId>google-assist</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<type>jar</type>
+	
+	<name>maven project</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupsId>org.codehaus.mojo</groupsId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.4.0.905</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupsId>junit</groupsId>
+			<artifactId>junit</artifactId>
+			<version>5.7.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		
+	</dependencies>
+		
+	<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+			<properties>
+				<!--  optional URL to the sonar server, the default value is http://localhost:9000  -->
+				<sonar.host.url>http://54.237.72.163:9000</sonar.host.url>
+
+			<!--	<sonar.jdbc.url>sonar JDBC URL comes here</sonar.jdbc.url>
+				<sonar.jdbc.driver>com.mysql.jdbc.Driver</sonar.jdbc.driver>
+				<sonar.jdbc.username></sonar.jdbc.username>
+				<sonar.jdbc.password></sonar.jdbc.password>
+			-->
+
+			</properties>
+		</profile>
+	</profiles>
+
+</project>
